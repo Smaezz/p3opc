@@ -40,6 +40,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: end;
+    list-style-type: none;
     padding: 0px 10px;
     gap: 68px;
     min-width: 344px;
@@ -49,14 +50,14 @@ header {
     margin-right: 0%;
 }
 
-li .button1 .button2 {
+li {
     list-style-type: none;
-    display: flex;
-    justify-content: space-between;
+    line-height: 200%;
 }
 
 a {
     text-decoration: none;
+    list-style-type: none;
     color: black;
 }
 
@@ -98,7 +99,6 @@ a {
 }
 
 form {
-    box-sizing: border-box;
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
@@ -132,12 +132,10 @@ form {
 }
 
 .search {
-    width: auto;
-    height: 21px;
+    width: 100%;
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
-    text-align: center;
     border: none;
 }
 
@@ -186,7 +184,6 @@ form {
     flex-direction: row;
     align-items: center;
     padding: 10px;
-    /*width: 173px;*/
     height: 50px;
     border: 2px solid #d9d9d9;
     border-radius: 25px;
@@ -240,6 +237,9 @@ form {
 
 .card-img {
     object-fit: cover;
+    overflow:hidden;
+    min-width: 0;
+    min-height: 0;
 }
 
 /*img {
@@ -423,7 +423,7 @@ form {
 }
 
 .imgfort {
-    height:88%;
+    overflow:hidden;
 }
 
 .card-txtA {
@@ -456,12 +456,12 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    gap: 10%;
     box-sizing: border-box;
     background: #F2F2F2;
 }
 
 .foot {
-    align-items: flex-start;
     max-width: 100%;
     max-height: 100%;
     padding-left: 20px;
@@ -475,11 +475,11 @@ footer {
 
     
 
-    .valid {
+    /*.valid {
         display: flex;
-        visibility: none;
+        /*visibility: none;
         content-visibility: none;
-    }
+    }*/
 
     form {
         justify-content: center;
@@ -528,6 +528,7 @@ footer {
     body {
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 
     header {
@@ -539,6 +540,7 @@ footer {
     #logo {
         padding-left: 0;
         justify-content: center;
+        margin-top: 30px;
     }
 
     .nav li {
@@ -554,6 +556,7 @@ footer {
         justify-content: center;
         padding-top: 15px;
         gap: 0px;
+        margin-top: 10px;
     }
 
     .nav li a:hover {
@@ -565,6 +568,10 @@ footer {
         border-top: 0px solid white;
         /*padding-top: 15px;*/
         width: 100%;
+    }
+
+    .main-container {
+        padding: 0 15px;
     }
 
     .valid {
@@ -591,6 +598,18 @@ footer {
         display: none;
     }
     
+    .border {
+        width: 150px;
+    }
+
+    .text {
+        font-size: 15px;
+    }
+
+    .fa {
+        font-size: 40px;
+    }
+
     .fa-magnifying-glass {
         visibility: visible;
         display: flex;
@@ -611,29 +630,37 @@ footer {
         justify-content: center;
         max-width: 100%;
         margin-top: 15px;
+        width:100%;
     }
 
     form {
         display: flex;
         justify-content: center;
         justify-content: space-between;
+        /*margin-top: 5rem;*/
     }
 
     .hebergements-and-populaires {
         flex-direction: column-reverse;
-        gap: 30px;
     }
 
     section.hebergements {
+        display: flex;
+        align-items: start;
         width: 100%;
         background: white;
         border-radius: 0%;
-        align-items: center;
+        margin-top: 15px;
+        padding-left: 0px;
     }
+
+
 
     section.populaires {
         border-radius: 0%;
-        margin:0;
+        margin: 0;
+        margin-left: -30px;
+        width: 117%;
     }
 
     .populaires {
@@ -662,14 +689,42 @@ footer {
         font-size: 13px;
     }
 
+    .hebergements-title {
+        padding: 10px;
+    }
+    
     .hebergements-cards {
+        flex-direction: column;
         justify-content: center;
+        justify-content: space-between;
+        width: 335px;
     }
 
+    .hebergements-cards img {
+        width: 100%;
+    }
+    
     .activ {
-        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+        justify-content: start;
     }
 
+    .cardsrow {
+        display: flex;
+        justify-content: start;
+    }
+    
+    .cardA {
+        height: 200px;
+        width: 324px;
+    }
+
+    img.photoA {
+        overflow: hidden;
+
+    }
     footer {
         margin-top: 30px;
         flex-direction: column;
