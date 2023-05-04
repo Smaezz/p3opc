@@ -401,6 +401,7 @@ form {
     display: flex;
     justify-content: space-between;  
     box-sizing: border-box; 
+    width: 100%;
 }
 
 .cardA {
@@ -410,8 +411,8 @@ form {
     box-sizing: border-box;
     filter: drop-shadow(0px 3px 15px rgba(0,0,0,0.1));
     padding: 10px;
-    width: 297px;
-    height: 439px;
+    width: 100%;
+    /*height: 439px;*/
 }
 
 .photoA {  
@@ -445,7 +446,6 @@ form {
     justify-content: space-between;
     justify-content: center;
     box-sizing: border-box;
-    flex-wrap: wrap;
     width: 100%;
     height: 100%;
 }
@@ -472,14 +472,6 @@ footer {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-
-    
-
-    /*.valid {
-        display: flex;
-        /*visibility: none;
-        content-visibility: none;
-    }*/
 
     form {
         justify-content: center;
@@ -540,34 +532,41 @@ footer {
     #logo {
         padding-left: 0;
         justify-content: center;
-        margin-top: 30px;
+        margin-top: 20px;
+        margin-bottom: 15px;
     }
 
     .nav li {
         display: flex;
         width: 50%;
         justify-content: center;
-        align-items: center;
+        align-items: center;   
     }
-
+    
     .nav {
         width: 100%;
         display: flex;
         justify-content: center;
-        padding-top: 15px;
         gap: 0px;
-        margin-top: 10px;
+    }
+    
+    a {
+        display: flex;
+        justify-content: center;
+        border-bottom: 2px solid rgb(242, 240, 240);
+        width: 100%;
+        padding-bottom: 5px;
     }
 
     .nav li a:hover {
         display: flex;
         justify-content: center;
         border-bottom: 2px solid #0065FC;
-        padding-bottom: 10px;
         color: #0065FC;
         border-top: 0px solid white;
-        /*padding-top: 15px;*/
+        padding-top: 1px;
         width: 100%;
+        height: 100%;
     }
 
     .main-container {
@@ -714,6 +713,7 @@ footer {
     .cardsrow {
         display: flex;
         justify-content: start;
+        flex-wrap: wrap;
     }
     
     .cardA {
