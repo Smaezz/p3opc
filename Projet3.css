@@ -546,12 +546,6 @@ footer {
         padding: 0 15px;
     }
 
-    .valid {
-        display: flex;
-        visibility: none;
-        content-visibility: none;
-    }
-
     .validSmart {
         display: flex;
         flex-direction: row;
