@@ -1,7 +1,13 @@
 /****** General ***********/
+html {
+    margin: 0 auto;
+    width: 100%;
+}
+
 * {
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
+    max-width: 1440px;
 }
 
 :root {
@@ -17,14 +23,16 @@
 body {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
+    margin: 0;
+}
+
+.fa-solid {
+    color: var(--main-color);
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 30px;
     align-items: center;
     width: 100%;
 }
@@ -32,7 +40,7 @@ header {
 #logo {
     width: auto;
     height: 19px;
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 .nav {
@@ -60,6 +68,13 @@ a {
     color: black;
 }
 
+.aa {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    height: 100%;
+    width: 100%;
+}
 .nav li a:hover {
     border-top: 2px solid #0065FC;
     padding-top: 15px;
@@ -68,9 +83,8 @@ a {
 
 .main-container {
     width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
     box-sizing: border-box;
+    padding: 2rem;
 }
 
 .infoGroup {
@@ -210,7 +224,7 @@ form {
 .text {
     display: flex;
     flex-direction: row;
-    padding-left: 15px;
+    padding-left: 10px;
 }
 
 .retour {
@@ -300,6 +314,12 @@ form {
     height: 134px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+img .photo {
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .hebergements-cards {
@@ -348,6 +368,7 @@ form {
     height: 134px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    object-fit: cover;
 }
 
 .populaires-cards .card-content {
@@ -508,12 +529,18 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin: 0;
     }
 
     header {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .main-container{
+        margin:0;
+        padding: 0;
     }
 
     #logo {
@@ -545,6 +572,17 @@ footer {
         padding-bottom: 5px;
     }
 
+    .ah {
+        flex-direction: column;
+        border: none;
+    }
+
+    .aa {
+        flex-direction: column;
+        height: 100%;
+        border: none;
+    }
+
     .nav li a:hover {
         display: flex;
         justify-content: center;
@@ -554,10 +592,6 @@ footer {
         padding-top: 1px;
         width: 100%;
         height: 100%;
-    }
-
-    .main-container {
-        padding: 0 15px;
     }
 
     .validSmart {
@@ -603,6 +637,7 @@ footer {
     .infoGroup {
         display: flex;
         align-items: center;
+        padding: 2rem;
     }
 
     .form {
@@ -625,6 +660,11 @@ footer {
         margin: auto;
         flex-wrap: wrap;
     }
+
+    .info {
+        margin-bottom: 0;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column-reverse;
     }
@@ -698,7 +738,8 @@ footer {
         display: flex;
         flex-direction: column;
         padding-top: 0;
-        justify-content: start;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 
     .cardsrow {
@@ -725,4 +766,3 @@ footer {
         line-height: 200%;
     }
 }
-
