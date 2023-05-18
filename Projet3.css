@@ -227,6 +227,11 @@ form {
     padding-left: 10px;
 }
 
+.anti-retour {
+    display: flex;
+    gap: 1rem;
+}
+
 .retour {
     display: flex;
     gap: 1rem;
